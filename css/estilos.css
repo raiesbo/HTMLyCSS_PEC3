@@ -46,7 +46,7 @@ font-family: 'Open Sans', sans-serif; */
     color: rgb(189, 55, 0);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .main-header img {
         margin: auto;
         display: block;
@@ -73,6 +73,18 @@ font-family: 'Open Sans', sans-serif; */
 
 .footer-container {
     text-align: center;
+    max-width: 1040px;
+    padding: 0 20px 0 20px;
+    margin: auto;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    color: rgb(189, 55, 0);
 }
 
 .footer-container ul {
@@ -91,8 +103,6 @@ font-family: 'Open Sans', sans-serif; */
 .footer-container li a {
     display: inline;
     margin: auto 5px;
-    color: white;
-    text-decoration: none;
     font-size: 0.9rem;
 }
 
@@ -101,12 +111,11 @@ font-family: 'Open Sans', sans-serif; */
     display: block;
     background: black;
     border: 0px;
-    /* color: rgba(0, 0, 0, 0.1); */
     padding: 10px;
     text-align: center;
     font-size: 1.1rem;
     border-bottom: 1px solid grey;
-    width: 260px;
+    width: 400px;
 }
 
 .footer-container img {
@@ -125,17 +134,24 @@ font-family: 'Open Sans', sans-serif; */
 .footer-container button {
     margin: 20px auto 40px auto;
     display: block;
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding: 10px;
+    cursor: pointer;
 }
 
 span:lang(en) {
     font-style: italic;
 }
 
-/* .footer-container button::content {
-    text-transform: capitalize;
-} */
+@media screen and (max-width: 768px) {
+    .footer-container .sentence {
+        font-size: 1.2rem;
+    }
+    .footer-container input#email {
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+}
 
 /* GENERAL MAIN */
 
@@ -158,10 +174,6 @@ span:lang(en) {
 p {
     line-height: 1.5;
 }
-
-/* .main-container h1 {
-    font-size: 3rem;
-} */
 
 /* INDEX PAGE */
 
@@ -197,6 +209,14 @@ p {
     padding: 0 20px;
 }
 
+#index-main-section header h2 {
+    font-size: 2.3rem;
+}
+
+#index-main-section header p {
+    font-size: 1.6rem;
+}
+
 .card-container {
     display: grid;
     align-items: stretch;
@@ -229,7 +249,30 @@ p {
 
 .card p {
     padding: 0 15px 60px 15px;
-    line-height: 1.();
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        grid-auto-rows: auto;
+    }
+    .card-container div:nth-child(odd) {
+        background-color: transparent;
+    }
+    .card h3 {
+        font-size: 1.8rem;
+        padding: 15px 0;
+    }
+    .card p {
+        padding: 0 0 30px 0;
+        line-height: 1.5;
+    }
+    #index-main-section header h2 {
+        font-size: 2.3rem;
+    }
+    #index-main-section header p {
+        font-size: 1.6rem;
+    }
 }
 
 /* MARTE EN EL CINE */
@@ -269,13 +312,11 @@ p {
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     grid-template-columns: 250px 1fr 250px;
-    grid-template-columns: 250px 1fr 250px;
-    /* grid-template-columns: 1fr; */
     column-gap: 20px;
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .author-card {
         grid-template-columns: 1fr;
     }
@@ -295,4 +336,102 @@ p {
 
 .author-card img {
     max-width: 100%;
+}
+
+.author-card blockquote {
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.author-card cite {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.underscore {
+    color: rgb(189, 55, 0);
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    position: relative;
+    bottom: 8px;
+    margin-right: 5px;
+}
+
+/* MARS 2020 */
+
+#main-mars2020 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.mars2020-article p {
+    margin: 10px auto 10px auto;
+}
+
+.mars2020-article li {
+    margin-left: 30px;
+    list-style-type: square;
+}
+
+.mars2020-article iframe {
+    border: none;
+    width: 100%;
+    min-height: 400px;
+}
+
+.mars2020-article figcaption {
+    text-align: center;
+    font-size: 0.9rem
+}
+
+#main-mars2020 aside {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-mars2020 aside h3 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 35px auto 15px auto;
+    width: 240px;
+}
+
+#main-mars2020 aside ul {
+    list-style: none;
+    font-size: 0.85rem;
+}
+
+#main-mars2020 a {
+    text-decoration: none;
+    color: rgb(189, 55, 0);
+}
+
+#main-mars2020 a:hover {
+    color: black;
+}
+
+#main-mars2020 aside li {
+    margin-bottom: 3px;
+}
+
+#main-mars2020 aside li.active {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    #main-mars2020 {
+        flex-direction: column;
+    }
+    #main-mars2020 aside h3 {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .mars2020-article iframe {
+        border: none;
+        width: 100%;
+        min-height: 300px;
+    }
 }
