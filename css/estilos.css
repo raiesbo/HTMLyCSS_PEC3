@@ -69,6 +69,7 @@ font-family: 'Open Sans', sans-serif; */
     background-color: black;
     color: white;
     padding: 50px 0 75px 0;
+    margin-top: 120px;
 }
 
 .footer-container {
@@ -164,11 +165,6 @@ span:lang(en) {
 
 .main-title {
     font-size: 3rem;
-}
-
-.container {
-    margin-top: 30px;
-    margin-bottom: 120px;
 }
 
 p {
