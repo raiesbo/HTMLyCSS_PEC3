@@ -1,5 +1,13 @@
 # HTMLyCSS-pec3
 
-UOC subject's PEC3 project
 
-Responsive web design
+Website prototype that collects information about the planet Mars from various points of view: NASA, lietaruta and film projects.
+Academic project.
+
+[Link to the WEBSITE](https://raiesbo.github.io/html&css_pec3/index.html)
+
+
+## Technologies:
+
+- HTML
+- CSS
