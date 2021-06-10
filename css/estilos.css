@@ -8,9 +8,6 @@ body {
     font-family: 'Alegreya', serif;
 }
 
-/* font-family: 'Alegreya', serif;
-font-family: 'Open Sans', sans-serif; */
-
 /* MAIN HEADER */
 
 .main-header {
@@ -165,6 +162,7 @@ span:lang(en) {
 
 .main-title {
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 p {
@@ -176,7 +174,6 @@ p {
 #index-header {
     background-color: black;
     color: white;
-    font-family: 'Alegreya', serif;
 }
 
 .index-header-container {
@@ -255,6 +252,13 @@ p {
     .card-container div:nth-child(odd) {
         background-color: transparent;
     }
+    #index-header h1 {
+        /* font-size: 5rem; */
+        font-size: 11vw;
+    }
+    #index-header p {
+        font-size: 7vw;
+    }
     .card h3 {
         font-size: 1.8rem;
         padding: 15px 0;
@@ -263,11 +267,16 @@ p {
         padding: 0 0 30px 0;
         line-height: 1.5;
     }
+    #index-header .index-header-container {
+        max-height: 400px;
+    }
     #index-main-section header h2 {
-        font-size: 2.3rem;
+        /* font-size: 2.3rem; */
+        font-size: 8vw;
     }
     #index-main-section header p {
-        font-size: 1.6rem;
+        /* font-size: 1.6rem; */
+        font-size: 5.5vw;
     }
 }
 
