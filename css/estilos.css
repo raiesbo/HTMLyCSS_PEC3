@@ -75,7 +75,7 @@ body {
 }
 
 .footer-container a {
-    color: white;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -155,7 +155,6 @@ span:lang(en) {
     margin: auto;
     max-width: 1040px;
     padding: 0 20px;
-    font-family: 'Alegreya', serif;
 }
 
 .main-title {
@@ -228,7 +227,6 @@ p {
     align-items: stretch;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: 1fr;
-    font-family: 'Alegreya', serif;
 }
 
 .card-container div:nth-child(odd) {
