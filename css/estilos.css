@@ -74,6 +74,14 @@ body {
     margin: auto;
 }
 
+.footer-container img {
+    max-width: 250px;
+}
+
+.footer-container .sentence {
+    font-size: 1.4rem;
+}
+
 .footer-container a {
     color: inherit;
     text-decoration: none;
@@ -83,48 +91,26 @@ body {
     color: rgb(189, 55, 0);
 }
 
-.footer-container ul {
-    margin-bottom: 30px;
-}
-
-.footer-container p {
-    font-size: 0.75rem;
-}
-
-.footer-container li {
-    display: inline;
-    margin: auto 5px;
-}
-
-.footer-container li a {
-    display: inline;
-    margin: auto 5px;
-    font-size: 0.9rem;
-}
-
-.footer-container input#email {
-    margin: 20px auto;
-    display: block;
-    background: black;
-    border: 0px;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.1rem;
-    border-bottom: 1px solid grey;
-    width: 400px;
-}
-
-.footer-container img {
-    max-width: 250px;
-}
-
-.footer-container .sentence {
-    font-size: 1.4rem;
-}
-
 .footer-container .email {
     font-size: 0.9rem;
     margin-bottom: 20px;
+}
+
+span:lang(en) {
+    font-style: italic;
+}
+
+.footer-container input#email {
+    color: inherit;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 0px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    background: black;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 400px;
 }
 
 .footer-container button {
@@ -135,8 +121,18 @@ body {
     cursor: pointer;
 }
 
-span:lang(en) {
-    font-style: italic;
+.footer-container ul {
+    margin-bottom: 30px;
+}
+
+.footer-container li {
+    display: inline;
+    margin: auto 10px;
+    font-size: 0.9rem;
+}
+
+.footer-container p {
+    font-size: 0.75rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -145,7 +141,6 @@ span:lang(en) {
     }
     .footer-container input#email {
         width: 100%;
-        border-bottom: 1px solid white;
     }
 }
 
@@ -224,7 +219,6 @@ p {
 
 .card-container {
     display: grid;
-    align-items: stretch;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: 1fr;
 }
@@ -239,7 +233,7 @@ p {
 
 .card h3 {
     font-size: 1.8rem;
-    padding: 15px 15px;
+    padding: 15px;
 }
 
 .card h3 a {
@@ -257,25 +251,11 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    .card-container {
-        grid-auto-rows: auto;
-    }
-    .card-container div:nth-child(odd) {
-        background-color: transparent;
-    }
     #index-header h1 {
         font-size: 10vw;
     }
     #index-header p {
         font-size: 6vw;
-    }
-    .card h3 {
-        font-size: 1.8rem;
-        padding: 15px 0;
-    }
-    .card p {
-        padding: 0 0 30px 0;
-        line-height: 1.5;
     }
     #index-header .index-header-container {
         max-height: 400px;
@@ -284,7 +264,20 @@ p {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 656px) {
+    .card-container {
+        grid-auto-rows: auto;
+    }
+    .card-container div:nth-child(odd) {
+        background-color: transparent;
+    }
+    .card h3 {
+        font-size: 1.8rem;
+        padding: 15px 0;
+    }
+    .card p {
+        padding: 0 0 30px 0;
+    }
     #index-main-section header h2 {
         font-size: 8vw;
     }
@@ -339,12 +332,6 @@ p {
     padding: 15px;
 }
 
-.author-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .author-card blockquote {
     font-style: italic;
     line-height: 1.5;
@@ -366,6 +353,12 @@ p {
     margin-right: 5px;
 }
 
+.author-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* MARS 2020 */
 
 #main-mars2020 {
@@ -385,11 +378,13 @@ p {
 
 .mars2020-article figcaption {
     text-align: center;
-    font-size: 0.9rem
+    margin-top: 15px;
+    font-size: 0.9rem;
 }
 
 #main-mars2020 aside {
     font-family: 'Open Sans', sans-serif;
+    min-width: 240px;
 }
 
 #main-mars2020 aside h3 {
@@ -397,7 +392,6 @@ p {
     font-size: 0.8rem;
     text-transform: uppercase;
     margin: 35px auto 15px auto;
-    width: 240px;
 }
 
 #main-mars2020 aside ul {
@@ -422,17 +416,11 @@ p {
     font-weight: 700;
 }
 
-#main-mars2020 figcaption {
-    margin-top: 15px;
-    font-size: 0.85rem;
-}
-
 @media screen and (max-width: 768px) {
     #main-mars2020 {
         flex-direction: column;
     }
     #main-mars2020 aside h3 {
-        width: 100%;
         margin-top: 15px;
     }
 }
